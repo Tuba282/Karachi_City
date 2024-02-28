@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Project</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container-fluid {
+            width: 100%;
+            height: 100vh;
+            background-image: linear-gradient(rgba(37, 35, 35, 0.745), rgba(0, 0, 0, 0.1));
+            background-position: center;
+            background-size: cover;
+            position: relative;
+            display: flex;
+            padding: 0 5%;
+            align-items: center;
+            justify-content: center;
+        }
+
+        nav img {
+
+            width: 300px;
+            height: 250px;
+        }
+
+        nav {
+            position: absolute;
+            width: 100%;
+            top: 0;
+            left: 0;
+            padding: 20px 8%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        nav li {
+            list-style: none;
+            display: inline;
+            justify-content: space-between;
+            margin: 50px 40px;
+            text-align: center;
+
+        }
+
+        .list {
+            padding-top: 4%;
+            margin-left: 50%;
+        }
+
+        nav li a {
+            text-decoration: none;
+            color: white;
+            font-size: 50px;
+            font-family: 'Arial Narrow', Arial, sans-serif;
+            transition: 0.2s;
+        }
+
+        nav a:hover {
+            border: 2px solid white;
+            border-radius: 70px;
+            height: 10px;
+            padding: 20px 45px;
+            /* transform: scale(0.3); */
+        }
+
+        .content {
+            /* text-align: center; */
+            position: absolute;
+            transform: translateX(-50%);
+        }
+
+        .content h1 {
+            font-size: 160px;
+            color: white;
+
+            font-family: 'Times New Roman';
+            transition: 0.5s;
+
+        }
+
+        .content h1:hover {
+            -webkit-text-stroke: 2px white;
+            color: transparent;
+        }
+
+        .content a {
+            text-decoration: none;
+            display: inline-block;
+            color: white;
+            font-size: 50px;
+            border: 3px double white;
+            border-radius: 70px;
+            padding: 20px 50px;
+            /* background-color: rgba(0, 0, 0, 0.1); */
+            font-family: 'Times New Roman';
+            margin-right: 20px;
+            margin-top: 30px;
+        }
+
+
+        #my-v {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            z-index: -1;
+            width: 100%;
+            height: auto;
+        }
+
+        .space {
+            width: 100%;
+            height: 10vh;
+            background-color: rgba(172, 166, 166, 0.447);
+            background-image: url(space\ background.jpg);
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+
+        @media(max-aspect-ratio: 16/9) {
+            #my-v {
+                width: 100%;
+                height: auto;
+
+            }
+
+            nav {
+                width: 100%;
+
+            }
+
+            nav li {
+                list-style: none;
+                display: inline;
+                justify-content: space-between;
+                margin: 50px 40px;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <video autoplay loop muted id="my-v">
+            <source src="Imgs/City Life.mp4" type="video/mp4">
+        </video>
+
+        <nav>
+            <img src="Imgs/logo.png">
+            <ol class="list">
+                <li><a href="#" onclick="">Home</a></li>
+                <li><a href="#" onclick="">Survice</a></li>
+                <li><a href="#" onclick="">About Us</a></li>
+                <li><a href="#" onclick="">Contact</a></li>
+            </ol>
+
+        </nav>
+        <div class="content">
+            <h1>Karachi City</h1>
+            <a href="https://en.wikipedia.org/wiki/Karachi" target="_blank">Explore</a>
+        </div>
+
+
+    </div>
+    <!--****************************************************************************************************************************************  -->
+    <div class=" p-3 bg-body-tertiary d-inline-flex w-100 justify-content-center "><br> <br> <br> <br>
+        <div class="card m-3" style="width: 20rem;">
+            <img src="Imgs/industrial-area.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Industrial Area</h5>
+                <p class="card-text">Karachi is now Pakistan's premier industrial and financial centre. The city has a
+                    formal economy estimated to be worth $190 billion as of 2021, which is the largest in the country.
+                </p>
+            </div>
+
+            <div class="card-body">
+                <a class="nav-link active  fs-5" aria-current="page" href="#"><button
+                        class="btn btn-outline-dark m-1 fs-6 " type="button">Explore More</a></button>
+            </div>
+        </div>
+        <div class="card m-3" style="width: 20rem; ">
+            <img src="Imgs/mazar-e-quaid.jpg" class="card-img-top" height="240" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Mazar-e-Quaid</h5>
+                <p class="card-text">Karachi is now Pakistan's premier industrial and financial centre. The city has a
+                    formal economy estimated to be worth $190 billion as of 2021, which is the largest in the country.
+                </p>
+            </div>
+
+            <div class="card-body">
+                <a class="nav-link active  fs-5" aria-current="page" href="#"><button
+                        class="btn btn-outline-dark m-1 fs-6 " type="button">Explore More</a></button>
+            </div>
+        </div>
+        <div class="card m-3" style="width: 20rem;">
+            <img src="Imgs/teen-talwar.jpg" class="card-img-top" height="240" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Teen Talwar Clifton</h5>
+                <p class="card-text">Karachi is now Pakistan's premier industrial and financial centre. The city has a
+                    formal economy estimated to be worth $190 billion as of 2021, which is the largest in the country.
+                </p>
+            </div>
+
+            <div class="card-body">
+                <a class="nav-link active  fs-5" aria-current="page" href="#"><button
+                        class="btn btn-outline-dark m-1 fs-6 " type="button">Explore More</a></button>
+            </div>
+        </div>
+    </div>
+    <div class=" p-3 bg-body-tertiary d-inline-flex w-100 justify-content-center ">
+        <div class="card m-3" style="width: 20rem;">
+            <img src="Imgs/populus city.webp" class="card-img-top" height="240" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">The Popular City</h5>
+                <p class="card-text">Karachi is now Pakistan's premier industrial and financial centre. The city has a
+                    formal economy estimated to be worth $190 billion as of 2021, which is the largest in the country.
+                </p>
+            </div>
+
+            <div class="card-body">
+                <a class="nav-link active  fs-5" aria-current="page" href="#"><button
+                        class="btn btn-outline-dark m-1 fs-6 " type="button">Explore More</a></button>
+            </div>
+        </div>
+        <div class="card m-3" style="width: 20rem;">
+            <img src="Imgs/habib Bank.jpg" class="card-img-top" height="240" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">The Habib Bank Plaza</h5>
+                <p class="card-text">Karachi is now Pakistan's premier industrial and financial centre. The city has a
+                    formal economy estimated to be worth $190 billion as of 2021, which is the largest in the country.
+                </p>
+            </div>
+
+            <div class="card-body">
+                <a class="nav-link active  fs-5" aria-current="page" href="#"><button
+                        class="btn btn-outline-dark m-1 fs-6 " type="button">Explore More</a></button>
+            </div>
+        </div>
+        <div class="card m-3" style="width: 20rem;">
+            <img src="Imgs/city of light.jpg" class="card-img-top" height="240" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">The city of lights</h5>
+                <p class="card-text">Karachi is now Pakistan's premier industrial and financial centre. The city has a
+                    formal economy estimated to be worth $190 billion as of 2021, which is the largest in the country.
+                </p>
+            </div>
+
+            <div class="card-body">
+                <a class="nav-link active  fs-5" aria-current="page" href="#"><button
+                        class="btn btn-outline-dark m-1 fs-6 " type="button">Explore More</a></button>
+            </div>
+        </div>
+
+    </div>
+
+    <!--  -->
+    <!-- ************************Features*************************************** -->
+    <div class="space"></div>
+    <!-- ************************Features*************************************** -->
+    <div class="card text-center " style="background-color: rgba(0, 0, 0, 0.1);">
+        <div class="card-header" style="background-color: rgba(0, 0, 0, 0.1);">
+            Our Only karachi
+        </div>
+        <div class="card-body">
+            <div class="card-body  d-inline-flex m-3  ">
+                <h5 class="card-title  m-3  "><a style="color: #000;" href="https://www.facebook.com/profile.php?id=100088131563237"
+                        target="_blank"><i class="fa-brands fa-facebook-f" aria-hidden="true"></a></i></h5>
+                <h5 class="card-title m-3 "><a style="color: #000;" href="https://www.instagram.com/?hl=en" target="_blank"><i
+                            class="fa-brands fa-instagram"></a></i></h5>
+                <h5 class="card-title m-3 "><a style="color: #000;" href="https://www.linkedin.com/in/tuba-jan-10b0a12b5/" target="_blank"><i
+                            class="fa-brands fa-linkedin-in"></a></i></h5>
+                <h5 class="card-title m-3 "><a style="color: #000;" href="https://github.com/dashboard" target="_blank"><i
+                            class="fa-brands fa-github"></a></i></h5>
+            </div>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            <a href="index.html" class="btn btn-outline-dark">To The Top</a>
+        </div>
+        <div class="card-footer " style="background-color: rgba(0, 0, 0, 0.1);">
+            © 2024 Feburary Copyright : Karachi City
+        </div>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
